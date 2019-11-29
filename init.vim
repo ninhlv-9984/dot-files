@@ -14,6 +14,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
+Plug 'kien/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
@@ -33,4 +34,26 @@ set background=dark
 set termguicolors
 colorscheme quantum
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 let g:rooter_change_directory_for_non_project_files = 'current'
+
+nnoremap <up>    <Esc>:echoerr 'Use k' <CR>
+nnoremap <down>  <Esc>:echoerr 'Use j' <CR>
+nnoremap <left>  <Esc>:echoerr 'Use h' <CR>
+nnoremap <right> <Esc>:echoerr 'Use l' <CR>
+
+inoremap <up>    <Esc>:echoerr 'Use k' <CR>
+inoremap <down>  <Esc>:echoerr 'Use j' <CR>
+inoremap <left>  <Esc>:echoerr 'Use h' <CR>
+inoremap <right> <Esc>:echoerr 'Use l' <CR>
+
+set wildignore+=*/node_modules/*
+map <C-p> :CtrlP <CR>
+
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_flow = 1
+let g:javascript_conceal_function = "ƒ"
+let g:javascript_coceal_null      = "ø"
