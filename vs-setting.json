@@ -1,0 +1,30 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 160,
+    "editor.fontSize": 13,
+    "window.zoomLevel": -0.3,
+    "editor.rulers": [
+        160
+    ],
+    "files.insertFinalNewline": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[html]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
+    },
+    "debug.node.autoAttach": "on",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.detectIndentation": false,
+    "pretty-formatter.forceIndent": true,
+    "pretty-formatter.indentSize": 2,
+    "ruby.intellisense": "rubyLocate"
+}
+
