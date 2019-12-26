@@ -22,12 +22,12 @@ call plug#end()
 set hidden
 set nobackup
 set nowritebackup
+set number
 set cmdheight=2
 set updatetime=300
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <leader>rn<Plug>(coc-rename)
-
 
 map <C-n> :NERDTreeToggle<CR>
 set background=dark
@@ -37,6 +37,16 @@ colorscheme quantum
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
 
 let g:rooter_change_directory_for_non_project_files = 'current'
 
