@@ -1,0 +1,16 @@
+[color]
+	ui = true
+[user]
+	name = Ninh
+	email = le.van.ninh@sun-asterisk.com
+[push]
+	default = matching
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+[alias]
+  st  = status
+  cmm = commit -m
+  cma = commit --amend
+  a   = add -A
+  l1  = log
+  p   = push
