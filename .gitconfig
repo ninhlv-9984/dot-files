@@ -12,5 +12,7 @@
   cmm = commit -m
   cma = commit --amend
   a   = add -A
-  l1  = log
+  l1  = log --oneline
   p   = push
+  b   = branch
+
